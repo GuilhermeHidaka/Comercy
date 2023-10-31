@@ -33,12 +33,20 @@ implementation
 
 {$R *.dfm}
 
+uses uMenu;
+
 procedure TfrmLogin.SpeedButton1Click(Sender: TObject);
 begin
   if (edtLogin.Text <> 'Supervisor') or (edtSenha.Text <> 'c3i9e5!#') then
     ShowMessage('Login ou Senha incorretos!')
+      //verifica se a senha ou login estão incorretos.
   else
-
+  frmMenu := TfrmMenu.Create(self);
+    //Cria o form
+  frmLogin.Hide;
+  //esconde o form
+  frmMenu.Show;
+  // mostra forms se ja for  criado
 end;
 
 end.
