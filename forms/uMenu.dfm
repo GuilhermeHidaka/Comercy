@@ -10,6 +10,7 @@ object frmMenu: TfrmMenu
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poDesktopCenter
   TextHeight = 15
   object pnlBG: TPanel
     Left = 0
