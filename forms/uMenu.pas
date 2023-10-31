@@ -21,8 +21,10 @@ type
     btnProdutos: TBitBtn;
     btnClientes: TBitBtn;
     btnCaixa: TBitBtn;
-    SpeedButton1: TSpeedButton;
+    btnFechar: TSpeedButton;
     procedure SpeedButton1Click(Sender: TObject);
+    procedure btnClientesClick(Sender: TObject);
+    procedure btnFecharClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,6 +37,23 @@ var
 implementation
 
 {$R *.dfm}
+
+uses uClientes;
+
+procedure TfrmMenu.btnClientesClick(Sender: TObject);
+begin
+  frmClientes := TfrmClientes.Create(self);
+    //Cria o form
+  frmMenu.Hide;
+  //esconde o form
+  frmClientes.Show;
+  // mostra forms se ja for  criado
+end;
+
+procedure TfrmMenu.btnFecharClick(Sender: TObject);
+begin
+Application.Terminate;
+end;
 
 procedure TfrmMenu.SpeedButton1Click(Sender: TObject);
 begin

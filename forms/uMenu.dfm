@@ -21,25 +21,6 @@ object frmMenu: TfrmMenu
     Color = clWhite
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 360
-    ExplicitTop = 272
-    ExplicitWidth = 185
-    ExplicitHeight = 41
-    object SpeedButton1: TSpeedButton
-      Left = 859
-      Top = 526
-      Width = 28
-      Height = 23
-      Caption = 'X'
-      Flat = True
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clRed
-      Font.Height = -16
-      Font.Name = 'Segoe UI'
-      Font.Style = [fsBold]
-      ParentFont = False
-      OnClick = SpeedButton1Click
-    end
     object pnlButtons: TPanel
       Left = 25
       Top = 1
@@ -762,13 +743,13 @@ object frmMenu: TfrmMenu
         Width = 72
         Height = 550
         Align = alClient
+        BevelOuter = bvNone
         TabOrder = 0
-        ExplicitTop = -2
         object btnRelatorios: TBitBtn
           AlignWithMargins = True
-          Left = 4
-          Top = 308
-          Width = 64
+          Left = 3
+          Top = 307
+          Width = 66
           Height = 70
           Align = alTop
           Caption = 'Relatorios'
@@ -1066,13 +1047,12 @@ object frmMenu: TfrmMenu
             000000000000}
           Layout = blGlyphTop
           TabOrder = 0
-          ExplicitTop = 232
         end
         object btnEstoque: TBitBtn
           AlignWithMargins = True
-          Left = 4
-          Top = 156
-          Width = 64
+          Left = 3
+          Top = 155
+          Width = 66
           Height = 70
           Align = alTop
           Caption = 'Estoque'
@@ -1373,9 +1353,9 @@ object frmMenu: TfrmMenu
         end
         object btnProdutos: TBitBtn
           AlignWithMargins = True
-          Left = 4
-          Top = 80
-          Width = 64
+          Left = 3
+          Top = 79
+          Width = 66
           Height = 70
           Align = alTop
           Caption = 'Produtos'
@@ -1697,13 +1677,12 @@ object frmMenu: TfrmMenu
             00000000000000000000000000000000000000000000}
           Layout = blGlyphTop
           TabOrder = 2
-          ExplicitTop = 79
         end
         object btnClientes: TBitBtn
           AlignWithMargins = True
-          Left = 4
-          Top = 4
-          Width = 64
+          Left = 3
+          Top = 3
+          Width = 66
           Height = 70
           Align = alTop
           Caption = 'Clientes'
@@ -2001,12 +1980,13 @@ object frmMenu: TfrmMenu
             000000000000}
           Layout = blGlyphTop
           TabOrder = 3
+          OnClick = btnClientesClick
         end
         object btnCaixa: TBitBtn
           AlignWithMargins = True
-          Left = 4
-          Top = 232
-          Width = 64
+          Left = 3
+          Top = 231
+          Width = 66
           Height = 70
           Align = alTop
           Caption = 'Caixa'
@@ -2312,14 +2292,15 @@ object frmMenu: TfrmMenu
       Top = 24
       Width = 761
       Height = 500
+      BevelOuter = bvNone
       Color = clSilver
       ParentBackground = False
       TabOrder = 1
       object Image1: TImage
-        Left = 1
-        Top = 1
-        Width = 759
-        Height = 498
+        Left = 0
+        Top = 0
+        Width = 761
+        Height = 500
         Align = alClient
         Picture.Data = {
           0954506E67496D61676589504E470D0A1A0A0000000D49484452000002F70000
@@ -4566,8 +4547,8 @@ object frmMenu: TfrmMenu
           12D816B5B2919249BC2079582617DAAA8E82DA5C4A5C407DD04725AE6A954389
           34F1FAC573B39CD4D51C3219B5FE5BFFADFFD67FEBBFF56FADFFCFAEFFFF0566
           60BBD6B9E6ADAD0000000049454E44AE426082}
-        ExplicitLeft = 0
-        ExplicitTop = 0
+        ExplicitLeft = -9
+        ExplicitTop = -8
       end
       object Image3: TImage
         Left = 320
@@ -4979,6 +4960,21 @@ object frmMenu: TfrmMenu
           55E6ACE60BBEF49DDBFE6B813FFE989BC771E08FD1E338F0C7E8711CF863F438
           0EFC317A1C07FE183D8E037F8C1EFF0F0F5B07A85AB9B79A0000000049454E44
           AE426082}
+      end
+      object btnFechar: TSpeedButton
+        Left = 728
+        Top = 8
+        Width = 25
+        Height = 25
+        Caption = 'X'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -21
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        OnClick = btnFecharClick
       end
     end
   end
