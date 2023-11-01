@@ -1,7 +1,7 @@
-object frmClientes: TfrmClientes
+object frmProdutos: TfrmProdutos
   Left = 0
   Top = 0
-  Caption = 'Clientes'
+  Caption = 'Produtos'
   ClientHeight = 400
   ClientWidth = 700
   Color = clBtnFace
@@ -10,7 +10,6 @@ object frmClientes: TfrmClientes
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poDesktopCenter
   TextHeight = 15
   object Panel1: TPanel
     Left = 0
@@ -19,8 +18,6 @@ object frmClientes: TfrmClientes
     Height = 400
     Align = alClient
     BevelOuter = bvNone
-    Color = cl3DLight
-    ParentBackground = False
     TabOrder = 0
     ExplicitLeft = 264
     ExplicitTop = 200
@@ -1237,6 +1234,9 @@ object frmClientes: TfrmClientes
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitLeft = 1
+      ExplicitTop = 1
+      ExplicitWidth = 698
       object Image1: TImage
         Left = 0
         Top = 0
@@ -1483,11 +1483,11 @@ object frmClientes: TfrmClientes
       end
       object Label1: TLabel
         Left = 7
-        Top = 6
-        Width = 69
+        Top = 7
+        Width = 83
         Height = 25
-        Caption = 'Clientes'
-        Font.Charset = ANSI_CHARSET
+        Caption = 'Produtos'
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
         Font.Height = -19
         Font.Name = 'Segoe UI'
@@ -1525,8 +1525,6 @@ object frmClientes: TfrmClientes
             Color = clInactiveCaption
             ParentBackground = False
             TabOrder = 0
-            ExplicitLeft = 3
-            ExplicitTop = -4
           end
           object Panel5: TPanel
             Left = 0
@@ -1538,177 +1536,6 @@ object frmClientes: TfrmClientes
             ParentBackground = False
             TabOrder = 1
             ExplicitTop = 39
-            object Panel8: TPanel
-              Left = 1
-              Top = 1
-              Width = 684
-              Height = 64
-              Align = alTop
-              TabOrder = 0
-              ExplicitTop = 6
-              object Panel7: TPanel
-                Left = 225
-                Top = 1
-                Width = 460
-                Height = 62
-                Align = alLeft
-                TabOrder = 0
-                object Label2: TLabel
-                  Left = 29
-                  Top = 21
-                  Width = 53
-                  Height = 21
-                  Caption = 'Nome :'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -16
-                  Font.Name = 'Segoe UI Semibold'
-                  Font.Style = [fsBold]
-                  ParentFont = False
-                end
-                object DBEdit2: TDBEdit
-                  Left = 89
-                  Top = 23
-                  Width = 347
-                  Height = 21
-                  TabOrder = 0
-                end
-              end
-              object Panel9: TPanel
-                Left = 1
-                Top = 1
-                Width = 224
-                Height = 62
-                Align = alLeft
-                TabOrder = 1
-                object lblID: TLabel
-                  Left = 13
-                  Top = 21
-                  Width = 24
-                  Height = 21
-                  Caption = 'ID :'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -16
-                  Font.Name = 'Segoe UI Semibold'
-                  Font.Style = [fsBold]
-                  ParentFont = False
-                end
-                object DBEdit1: TDBEdit
-                  Left = 43
-                  Top = 23
-                  Width = 166
-                  Height = 21
-                  TabOrder = 0
-                end
-              end
-            end
-            object Panel6: TPanel
-              Left = 1
-              Top = 65
-              Width = 684
-              Height = 64
-              Align = alTop
-              TabOrder = 1
-              object Panel10: TPanel
-                Left = 1
-                Top = 1
-                Width = 296
-                Height = 62
-                Align = alLeft
-                TabOrder = 0
-                ExplicitLeft = -5
-                ExplicitTop = -13
-                object Label4: TLabel
-                  Left = 13
-                  Top = 21
-                  Width = 35
-                  Height = 21
-                  Caption = 'CPF :'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -16
-                  Font.Name = 'Segoe UI Semibold'
-                  Font.Style = [fsBold]
-                  ParentFont = False
-                end
-                object DBEdit3: TDBEdit
-                  Left = 54
-                  Top = 23
-                  Width = 219
-                  Height = 21
-                  TabOrder = 0
-                end
-              end
-              object Panel11: TPanel
-                Left = 297
-                Top = 1
-                Width = 387
-                Height = 62
-                Align = alLeft
-                TabOrder = 1
-                ExplicitLeft = 303
-                ExplicitTop = 5
-                object Label5: TLabel
-                  Left = 17
-                  Top = 21
-                  Width = 68
-                  Height = 21
-                  Caption = 'Numero :'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clWindowText
-                  Font.Height = -16
-                  Font.Name = 'Segoe UI Semibold'
-                  Font.Style = [fsBold]
-                  ParentFont = False
-                end
-                object DBEdit4: TDBEdit
-                  Left = 95
-                  Top = 23
-                  Width = 269
-                  Height = 21
-                  TabOrder = 0
-                end
-              end
-            end
-            object Panel12: TPanel
-              Left = 1
-              Top = 129
-              Width = 684
-              Height = 72
-              Align = alTop
-              TabOrder = 2
-              object Label6: TLabel
-                Left = 14
-                Top = 21
-                Width = 77
-                Height = 21
-                Caption = 'Endere'#231'o :'
-                Font.Charset = ANSI_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -16
-                Font.Name = 'Segoe UI Semibold'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object DBEdit5: TDBEdit
-                Left = 97
-                Top = 23
-                Width = 564
-                Height = 21
-                TabOrder = 0
-              end
-            end
-            object Panel13: TPanel
-              Left = 1
-              Top = 201
-              Width = 684
-              Height = 48
-              Align = alTop
-              Color = clInfoBk
-              ParentBackground = False
-              TabOrder = 3
-            end
           end
         end
       end

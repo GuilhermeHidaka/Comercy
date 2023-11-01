@@ -55,11 +55,37 @@ object DM: TDM
     end
   end
   object Produtos: TFDQuery
-    Active = True
     Connection = Conexao
     SQL.Strings = (
       'select * from produtos')
     Left = 32
     Top = 152
+    object ProdutosCOD_PRODUTO: TIntegerField
+      FieldName = 'COD_PRODUTO'
+      Origin = 'COD_PRODUTO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object ProdutosNOME_PRODUTO: TStringField
+      FieldName = 'NOME_PRODUTO'
+      Origin = 'NOME_PRODUTO'
+      Size = 35
+    end
+    object ProdutosCOMPRA_PRODUTO: TFloatField
+      FieldName = 'COMPRA_PRODUTO'
+      Origin = 'COMPRA_PRODUTO'
+    end
+    object ProdutosVENDA_PRODUTO: TFloatField
+      FieldName = 'VENDA_PRODUTO'
+      Origin = 'VENDA_PRODUTO'
+    end
+    object ProdutosLUCRO_PRODUTO: TFloatField
+      FieldName = 'LUCRO_PRODUTO'
+      Origin = 'LUCRO_PRODUTO'
+    end
+    object ProdutosESTOQUE_PRODUTO: TIntegerField
+      FieldName = 'ESTOQUE_PRODUTO'
+      Origin = 'ESTOQUE_PRODUTO'
+    end
   end
 end

@@ -21,6 +21,12 @@ type
     ClientesCPF_PARC: TStringField;
     ClientesNUMERO_PARC: TStringField;
     Produtos: TFDQuery;
+    ProdutosCOD_PRODUTO: TIntegerField;
+    ProdutosNOME_PRODUTO: TStringField;
+    ProdutosCOMPRA_PRODUTO: TFloatField;
+    ProdutosVENDA_PRODUTO: TFloatField;
+    ProdutosLUCRO_PRODUTO: TFloatField;
+    ProdutosESTOQUE_PRODUTO: TIntegerField;
   private
     { Private declarations }
   public

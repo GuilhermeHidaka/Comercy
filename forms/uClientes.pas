@@ -10,43 +10,34 @@ uses
 
 type
   TfrmClientes = class(TForm)
-    pnlCentral: TPanel;
-    pnlTop: TPanel;
-    pnlDown: TPanel;
-    imgPnlTop: TImage;
-    imgPnlDown: TImage;
-    pctClientes: TPageControl;
-    tbsCadastro: TTabSheet;
     Panel1: TPanel;
+    Image2: TImage;
     Panel2: TPanel;
-    lblTitClientes: TLabel;
+    Image1: TImage;
     Panel3: TPanel;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
     Panel4: TPanel;
-    Panel7: TPanel;
-    dsClientes: TDataSource;
-    SpeedButton1: TSpeedButton;
-    tbsConsultaClientes: TTabSheet;
-    DBGrid1: TDBGrid;
-    pnlTopGuias: TPanel;
-    ComboBox1: TComboBox;
-    Edit1: TEdit;
-    btnBuscarClientes: TSpeedButton;
-    DBNavigator1: TDBNavigator;
     Panel5: TPanel;
-    Panel6: TPanel;
-    lblCodigo: TLabel;
-    edtCodigo: TDBEdit;
+    Label1: TLabel;
     Panel8: TPanel;
+    Panel7: TPanel;
+    Label2: TLabel;
     Panel9: TPanel;
-    lblNome: TLabel;
-    Label3: TLabel;
-    lblCPF: TLabel;
-    lblEndereco: TLabel;
+    lblID: TLabel;
+    Panel6: TPanel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    Panel10: TPanel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    Panel11: TPanel;
+    Label5: TLabel;
+    DBEdit4: TDBEdit;
+    Panel12: TPanel;
     Label6: TLabel;
-    edtNome: TDBEdit;
-    edtCPF: TDBEdit;
-    edtNumero: TDBEdit;
-    edtEndereco: TDBEdit;
+    DBEdit5: TDBEdit;
+    Panel13: TPanel;
     procedure SpeedButton1Click(Sender: TObject);
   private
     { Private declarations }
